@@ -22,6 +22,7 @@ public interface ContentRepository extends JpaRepository<ContentEntity, Long> {
      * @param groupType  group type
      * @param groupCode  group code
      * @param code       content code
+     * @return optional with a found content or empty otherwise
      */
     @Query(
             value = "SELECT content.* FROM content_service.content content " +
@@ -45,6 +46,7 @@ public interface ContentRepository extends JpaRepository<ContentEntity, Long> {
      * @param groupType  group type
      * @param groupCode  group code
      * @param code       content code
+     * @return optional with a found system or empty otherwise
      */
     Optional<ContentEntity> findByGroup_System_CodeAndGroup_TypeAndGroup_CodeAndCode(
             String systemCode,

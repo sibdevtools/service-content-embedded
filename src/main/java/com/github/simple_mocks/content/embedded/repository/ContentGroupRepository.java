@@ -14,6 +14,13 @@ import java.util.Optional;
  */
 public interface ContentGroupRepository extends JpaRepository<ContentGroupEntity, Long> {
 
+    /**
+     * Create a content group if not exists.
+     *
+     * @param systemId system id
+     * @param type     content group type
+     * @param code     content group code
+     */
     @Modifying
     @Query(
             value = "INSERT INTO content_service.content_group (code, type, system_id, created_at) " +

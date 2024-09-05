@@ -22,6 +22,11 @@ public interface SystemRepository extends JpaRepository<SystemEntity, Long> {
      */
     Optional<SystemEntity> findByCode(String code);
 
+    /**
+     * Save a new system by code if not exists.
+     *
+     * @param code system code
+     */
     @Modifying
     @Query(
             value = "INSERT INTO content_service.system (code, created_at) " +
