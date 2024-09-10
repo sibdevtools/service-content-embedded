@@ -9,7 +9,7 @@ import java.time.ZonedDateTime;
  * @author sibmaks
  * @since 0.0.1
  */
-@Entity(name = "content_attribute.content")
+@Entity(name = "content_attribute_content")
 @Getter
 @Setter
 @Builder
