@@ -1,14 +1,14 @@
 {
   "NOT_FOUND": {
     "title": "Something not found",
-    "description": "Check request attributes"
+    "message": "Check request attributes"
   },
   "NOT_SUPPORTED": {
     "title": "Operation not supported",
-    "description": ""
+    "message": ""
   },
   "SERIALIZATION_EXCEPTION": {
     "title": "Serialization error",
-    "description": "Content serialization error"
+    "message": "Content serialization error"
   }
 }
