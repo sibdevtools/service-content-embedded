@@ -1,0 +1,14 @@
+{
+  "NOT_FOUND": {
+    "title": "Что-то не найдено",
+    "description": "Проверьте аттрибуты запроса"
+  },
+  "NOT_SUPPORTED": {
+    "title": "Операция не поддерживается",
+    "description": ""
+  },
+  "SERIALIZATION_EXCEPTION": {
+    "title": "Ошибка сериализации",
+    "description": "Ошибка сериализации контента"
+  }
+}

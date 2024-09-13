@@ -8,6 +8,7 @@ import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.fasterxml.jackson.module.paramnames.ParameterNamesModule;
 import com.github.simplemocks.content.embedded.codec.JsonContentCodec;
+import com.github.simplemocks.error_service.mutable.api.source.ErrorLocalizationsJsonSource;
 import org.flywaydb.core.Flyway;
 import org.flywaydb.core.api.configuration.ClassicConfiguration;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -21,6 +22,16 @@ import javax.sql.DataSource;
  * @author sibmaks
  * @since 0.0.1
  */
+@ErrorLocalizationsJsonSource(
+        systemCode = "CONTENT_SERVICE",
+        iso3Code = "eng",
+        path = "classpath:/embedded/content/content/errors/eng.json"
+)
+@ErrorLocalizationsJsonSource(
+        systemCode = "CONTENT_SERVICE",
+        iso3Code = "rus",
+        path = "classpath:/embedded/content/content/errors/rus.json"
+)
 @PropertySource("classpath:embedded-content-application.properties")
 public class ContentServiceEmbeddedConfig {
 

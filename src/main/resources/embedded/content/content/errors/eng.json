@@ -1,0 +1,14 @@
+{
+  "NOT_FOUND": {
+    "title": "Something not found",
+    "description": "Check request attributes"
+  },
+  "NOT_SUPPORTED": {
+    "title": "Operation not supported",
+    "description": ""
+  },
+  "SERIALIZATION_EXCEPTION": {
+    "title": "Serialization error",
+    "description": "Content serialization error"
+  }
+}
