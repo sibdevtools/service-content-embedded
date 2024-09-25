@@ -1,4 +1,4 @@
-# Simple Mock - Content Embedded
+# SibDevTools - Content Embedded
 
 ## To build
 
